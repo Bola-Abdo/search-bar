@@ -1,0 +1,106 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+padding: 0;
+}
+
+.box {
+    
+    background-color:  #2196f3;
+    width: 500px;
+    height: 50px;
+    position: absolute;
+    border-radius: 40px;
+top: 50%;
+left: 50%;
+transform: translate(-50% , -50%);
+}
+.box .searh i {
+  
+    z-index: 1;
+
+}
+.box .searh {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    border-radius: 50%;
+    left: 450px;
+    width: 50px;
+    height: 50px;
+    background-color: #2196f3;
+    animation:  move  3s linear infinite;
+    animation-iteration-count:1;
+    animation-fill-mode: forwards;
+    overflow: hidden;
+    z-index: 1;
+    
+
+}
+@keyframes move {
+0%{
+    left: 450px;
+
+}
+50% {
+    left: 225px;
+
+}
+100% {
+    left: 450px;
+    background-color: #bbf32100;
+  
+}
+}
+
+.searh::after{
+    content: "";
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    border-radius: 50%;
+    left: 450px;
+    width: 50px;
+    height: 50px;
+    background-color: #f32121;
+    /* content: "";
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 50px;
+  background-color: red;
+    height: 50px;
+    background-image: linear-gradient( 60deg , transparent, #1324d9, #1324d9);
+    transform-origin: bottom right;
+    animation: spin 2s linear infinite;
+    animation-delay: -3s;
+    border: rgb(89, 0, 255) 2px solid; */
+}
+
+@keyframes sspin {
+
+    0% {
+    
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+
+/* 
+.box .searh span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    border-radius: 50%;
+    left: 450px;
+    width: 50px;
+    height: 50px;
+    background-color: #8721f3;
+} */
